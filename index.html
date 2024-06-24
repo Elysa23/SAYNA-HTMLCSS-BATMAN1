@@ -108,19 +108,18 @@
         <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville de la criminalité qui y règne.
         </p>
 
-        <ul class="AlfreP">
-            <li><img src="Assets/Illustrations/Bathome9.png" alt="Alfred Pennyworth"></li>
-            <li>Alfred Pennyworth - Michael Cain (2006 - 2008 - 2012)</li>
         
-        </ul>
-        <ul class="Catwoman">
-            <li><img src="Assets/Illustrations/Bathome8.png" alt="Catwoman"></li>
-            <li>Catwoman - Zoé Kravitz (2008)</li>
-        </ul>
-        <ul class="JamesG">
-            <li><img src="Assets/Illustrations/Bathome10.png" alt="James Gordon"></li>
-            <li>James Gordon (2014-2019)</li>
-        </ul>
+            <img src="Assets/Illustrations/Bathome9.png" alt="Alfred Pennyworth">
+           Alfred Pennyworth - Michael Cain (2006 - 2008 - 2012)
+        
+        
+        
+            <img src="Assets/Illustrations/Bathome8.png" alt="Catwoman">
+            Catwoman - Zoé Kravitz (2008)
+        
+         <img src="Assets/Illustrations/Bathome10.png" alt="James Gordon">
+            James Gordon (2014-2019)
+        
     </section>
 
     <article class="JusticeLeague">
@@ -136,14 +135,107 @@
     <div class="Multimédia1">
         <img src="Assets/Logos/icon_flèche_1.png"> 
         <img src="Assets/Illustrations/Bathome_ba1.png">
-        <img src="Assets/Logos/icon_flèche_2.png">
-    </div>
+        <img src="Assets/Logos/icon_flèche_2.png">~
+        <!--L'autre image à voir en cours de route car introuvable dans les assets. Puet-être cela fait-il partie des autres animations-->
+    
+      </div>
+
 
     <div class="Multimédia2">
         <img src="Assets/Illustrations/Bathome_ba2.png">
     </div>
 
     </section>
+
+    
+    <hr>
+
+    <footer>
+        <div class="Formulaire">
+        <h2>PRENONS CONTACT</h2>
+       
+            <form method="get" action="">
+               <label for="email">ADRESSE EMAIL</label> <br><input type="email" name="email" id="email" placeholder="Adresse email" >
+            <!--Peut-être enlever la bordure top de la case de l'adresse email en CSS. A voir.-->
+
+            <h2>NEWSLETTER</h2>
+            <p>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman : 
+             <label for="NewsLetterOk"></label>   <input type="checkbox" name="NewsLetterOk" id="NewsLetterOk"></p>
+
+            <!--La forme du checkbox est peut-être à voir avec CSS-->
+
+            <label for="FréqEnvoi">Choisissez la fréquence à laquelle vous souhaitez recevoir votre Newsletter</label>
+
+           <select name="fréquence" id="fréquence"  >
+            <option value="journalière">Journalière</option>
+            <option value="hebdomadaire">Hebdomadaire</option>
+            <option value="Mensuelle">Mensuelle</option>
+
+            <!-- A voir pour l'emplacement de la liste déroulante, la forme de la flèche et la position du label-->
+
+           </select>
+
+           <p>
+
+           <label for="news">Souhaitez vous recevoir des news</label><!--Peut-être mettre un border-bottom avec CSS-->
+           
+           <p>
+           <button type="button" onclick="selectChoice('Des films')">Des films</button>
+           <button type="button" onclick="selectChoice('Des comics')">Des comics</button>
+           <button type="button" onclick="selectChoice('De tout')">De tout</button>
+        </p> <!--Ajouter des paddings et marging aux boutons. Il manque aussi les codes javascript qui vont avec-->
+
+            </p>
+
+            <p>
+                <h2>MESSAGE</h2>
+                <!--<textarea name="commentaire" id="commentaire">Laisser un commentaire pour la communeauté</textarea>-->
+                <input type="text" name="commentaire" id="commentaire" placeholder="Laisser un commentaire pour la communauté" size="50"> 
+            </p><!--Peut-être à revoir pour le choix de formulaire et l'emplacement du texte. -->
+
+            <p>
+              <input type="submit" value="CONFIRMER">
+            </p>
+
+          </form>
+
+          </div>
+
+            <hr>
+
+            <img src="Assets/Logos/icon_guillemets_1.png" >
+            <p>
+              <!--A centrer avec CSS-->
+              <blockquote>
+                La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.
+
+                <p>
+                  <cite> The Dark Knight : Le Chevalier Noir-Le Joker à Batman (2008)</cite>
+                </p>
+              </blockquote>
+              <!--Les cercles ou ronds à mettre en place avec CSS avec border-radisus à 50%-->
+              <div class="circle"></div>
+              <div class="circle" style="background-color: blue;"></div>
+            </p> 
+
+            <img src="Assets/Logos/icon_guillemets_2.png"><!--Emplacement à droite à modifier avec CSS-->
+
+           
+              <img src="ProjetD101/Assets/Logos/icon_WB.png"> Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+              <!--Taille de l'icone à modifier sur CSS pour que cela soit visible sur le site-->
+              <div class="Icones">
+                <img src="ProjetD101/Assets/Logos/logo_sayna_white.png" alt="Sayna">
+                <img src="ProjetD101/Assets/Logos/icon_x.png" alt="icon_x">
+                <img src="ProjetD101/Assets/Logos/icon_DC.png" alt="DC">
+                <img src="ProjetD101/Assets/Logos/icon_facebook.png" alt="Facebook">
+                <img src="ProjetD101/Assets/Logos/icon_ig.png" alt="Instagram">
+                <img src="ProjetD101/Assets/Logos/icon_tw.png" alt="Twitter">
+
+              </div>
+
+  
+
+    </footer>
     </main>
   </body>
 </html>
