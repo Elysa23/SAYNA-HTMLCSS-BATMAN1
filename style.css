@@ -1,0 +1,476 @@
+/*.Bathome1 {
+  width: 100%;
+  background-image: url("Assets/Illustrations/Bathome1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+  /* Ces propriétés si on mettait le background-image juste pour une section.*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* code napiko */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* katreto */
+
+  box-sizing: border-box;
+
+  color: white;
+
+  background-color: black;
+  background-image: url("Assets/Illustrations/Bathome1.png");
+  background-repeat: no-repeat;
+  /*background-position: inherit; /*semble n'avoir aucun effet sur le positionnement de l'image jusqu'ici*/
+  background-size: 100vw auto;
+  background-attachment: scroll;
+  background-origin: border-box;
+  background-clip: content-box;
+
+  /* shorthand property du background-color : 
+  background : color url repeat position*/
+
+  text-align: justify;
+  font-family: "Space Grotesk";
+  font-size: 13px;
+
+  /*margin-left: 400px;
+  margin-right: 90px;*/
+  border: solid grey;
+  border-top: none;
+
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+main {
+  /*border: solid grey;*/
+  position: relative;
+  border-bottom: none;
+  border-top: solid grey;
+}
+
+header {
+  display: inline-block;
+  border-top: none;
+  /*border-bottom: solid grey;*/
+  width: 100vw;
+}
+
+/* code napiko */
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80%;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+/* katreto */
+
+.logohome {
+  width: 5%;
+  height: auto;
+  margin-left: 6%;
+}
+
+h2 {
+  font-family: "rajdhani";
+}
+
+input[type="button"] {
+  /*font-family: "rajdhani";*/
+}
+
+.Batman p:first-of-type {
+  text-align: center;
+  display: inline-block;
+  width: 320px;
+}
+
+.Batman {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.LogosHaut {
+  position: absolute;
+  right: -95px;
+}
+
+header span a {
+  color: azure;
+  text-align: right;
+  margin-left: 1200px;
+  font-size: larger;
+  font-family: "rajdhani";
+  font-size: 35px;
+  font-weight: bold;
+}
+.Batman nav li /*:first-child */ {
+  display: inline-block;
+  border-style: hidden;
+  background-color: #c5c5c4; /*A voir pour la couleur*/
+  list-style-type: none;
+  padding: 15px;
+  font-family: "rajdhani";
+}
+
+.Batman li a {
+  text-decoration: none;
+  color: white;
+}
+
+.Batman nav li:nth-child(2) {
+  margin: 25px;
+}
+
+.Batman li {
+  list-style-type: none;
+}
+
+.Batman aside {
+  text-align: right;
+} /*Positionnement des icones sur la bordure à revoir*/
+
+.FlècheDown {
+  text-align: center;
+  /* margin-top: 200px;*/
+}
+
+.principal {
+  padding: 5%;
+}
+
+.PrezBatman div {
+  display: inline-flex;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 15px;
+  width: 60%;
+  margin-left: 10vw;
+}
+
+.robertP {
+  width: 15vw;
+  height: auto;
+}
+
+.christianB {
+  width: 15vw;
+  height: auto;
+}
+
+.benA {
+  width: 15vw;
+  height: auto;
+}
+
+figcaption {
+  display: block;
+  text-align: center;
+}
+
+/*2è section, NEMESIS*/
+
+section h2 img {
+  padding: 5px;
+  margin-left: 0px;
+  width: 10%;
+  /*Avoir pour le rapprochement de l'image et du NEMESIS*/
+}
+
+/*section h2 {
+  margin-right: 0%;
+  padding-right: 0px;
+}*/
+
+.Nemesis div {
+  display: inline-flex;
+  /*flex-direction: row;*/
+  /*text-align: center;*/
+  /*align-items: center;*/
+  margin-left: 10vw;
+} /* A voir pour que les images tiennent dans le contenu de la page principale*/
+
+/*ALLIES*/
+
+.Bathome12 img {
+  position: absolute;
+  text-align: right;
+  right: -100px;
+}
+
+.Allies {
+  margin-top: 300px;
+  margin-bottom: 80px;
+}
+
+.Allies div {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-right: 50px;
+  text-align: center;
+  margin-left: 10vw;
+}
+
+/*Justice League*/
+
+.JusticeLeague img {
+  width: 100vw;
+  margin-top: 80px;
+}
+
+/*MULTIMEDIA*/
+
+/*.Multimédia1 {
+  text-align: center;
+}*/
+
+/* .Multimédia1 img:first-of-type {
+  margin-right: 500px;
+}
+
+.Multimédia1 img:nth-last-of-type(2) {
+  margin-right: 500px;
+}
+
+.Multimédia1 img:nth-last-of-type(3) {
+  margin-left: 500px;
+} */
+
+/* Eto */
+.Multimédia1 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bathome-img {
+  margin-left: -15%;
+}
+/* katreto */
+
+.multim2 {
+  display: flex;
+  width: 70%;
+  height: auto;
+  /*justify-content: center;
+  align-items: center;*/
+  margin: 0 auto;
+}
+
+.arrow {
+  height: 50px;
+}
+
+.Multimédia2 {
+  margin-top: 150px;
+  margin-bottom: 90px;
+  text-align: center;
+  /* width: 2000px;*/
+}
+
+.contact {
+  background: linear-gradient(to right, #4c4e42, #142936);
+  border-top-style: inset;
+  background-size: auto;
+  border-top-color: rgba(190, 185, 185, 2);
+  border-top-width: 1.8px;
+  border-bottom-style: inset;
+  border-bottom-color: rgba(190, 185, 185, 2);
+  border-bottom-width: 1.8px;
+}
+
+.formulaire {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 30%;
+  padding-left: 0px;
+  width: 45%;
+}
+
+/*.email {
+  border-right: none;
+  border-left: none;
+  border-style: hidden;
+  border-image: none;
+  border: none;
+}
+  C'est ici que j'ai testé différents moyens pour enlever les bordures par défaut de la case mais en vain.
+*/
+
+.Formulaire label {
+  color: #62676d;
+}
+
+.email {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+  border-bottom: solid grey;
+} /*Les bordures sont toujours l
+à. A revoir*/
+
+.h2 {
+  text-align: center;
+  /*margin-top: 40px;*/
+  padding-top: 35px;
+}
+
+.FréqEnvoi {
+  display: block;
+  /*text-decoration: underline; DISO
+  text-decoration-style: solid;*/
+  border-bottom-style: solid;
+}
+
+#fréquence {
+  /* margin-left: 20px;*/
+  /*padding: 0%;*/
+  border-style: none; /*A revoir pour le style de la liste */
+}
+
+.news {
+  display: block;
+  border-bottom-style: solid;
+}
+
+.boutons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  gap: 25px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.boutons button {
+  padding: 10px 20px;
+}
+
+.test {
+  display: block;
+
+  border-style: none;
+  border-bottom-style: solid;
+}
+
+#commentaire {
+  display: block;
+  border-bottom: solid grey;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input[type="submit"] {
+  background: linear-gradient(to right, #eddebf66, #89000866);
+  margin-left: 40%;
+  margin-top: 17px;
+  padding: 15px 50px;
+  color: white;
+  font-family: "rajdhani";
+  font-weight: bold;
+  border-width: 0px;
+}
+
+/*CITATION*/
+
+.citation {
+  /* margin-left: 40px;
+  margin-right: 40px;*/
+  margin-top: 150px;
+}
+
+blockquote {
+  display: inline-block;
+  font-weight: bold;
+  width: 20%;
+  margin-left: 40%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+cite {
+  font-weight: normal;
+  color: rgb(216, 207, 207);
+  font-style: normal;
+}
+
+.citation img:first-of-type {
+  margin-left: 30%;
+}
+
+.citation img:nth-of-type(2) {
+  margin-left: 65%;
+}
+
+.circle {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  /*background-color: rgb(19, 104, 201);*/
+  background: radial-gradient(
+    circle 3px at center,
+    black 20%,
+    rgb(19, 104, 201)
+  );
+}
+
+.circle:nth-of-type(5) {
+  width: 5.5px;
+  height: 5.5px;
+  background: radial-gradient(circle, rgb(19, 104, 201), rgb(19, 104, 201));
+}
+
+#circle {
+  display: inline-block;
+  margin-left: 47%;
+  margin-top: 0px;
+}
+
+.citation p:nth-of-type(3) {
+  margin-top: 0px;
+}
+
+/*FOOTER*/
+
+footer {
+  margin: 6% 28% 6% 37%;
+}
+
+.wb {
+  display: inline-flex;
+  font-size: 10px;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.Icones {
+  display: inline-flex;
+  margin-top: 4%;
+  margin-left: 19%;
+  justify-content: space-between;
+  gap: 25px;
+  max-width: 25px;
+}
+
+a > img {
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
