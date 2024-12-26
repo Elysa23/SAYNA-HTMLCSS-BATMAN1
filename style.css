@@ -117,10 +117,14 @@ header span a {
 .Batman nav li /*:first-child */ {
   display: inline-block;
   border-style: hidden;
-  background-color: #c5c5c4; /*A voir pour la couleur*/
+  background-color: rgba(225, 225, 225, 0.3); /*A voir pour la couleur*/
   list-style-type: none;
   padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "rajdhani";
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .Batman li a {
@@ -129,7 +133,7 @@ header span a {
 }
 
 .Batman nav li:nth-child(2) {
-  margin: 25px;
+  margin: 30px;
 }
 
 .Batman li {
@@ -150,12 +154,12 @@ header span a {
 }
 
 .PrezBatman div {
-  display: inline-flex;
+  display: flex;
   text-align: center;
   box-sizing: border-box;
   margin-top: 15px;
-  width: 60%;
-  margin-left: 10vw;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .robertP {
@@ -193,11 +197,9 @@ section h2 img {
 }*/
 
 .Nemesis div {
-  display: inline-flex;
-  /*flex-direction: row;*/
-  /*text-align: center;*/
-  /*align-items: center;*/
-  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 } /* A voir pour que les images tiennent dans le contenu de la page principale*/
 
 /*ALLIES*/
@@ -214,11 +216,11 @@ section h2 img {
 }
 
 .Allies div {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 20px;
-  margin-right: 50px;
   text-align: center;
-  margin-left: 10vw;
 }
 
 /*Justice League*/
@@ -246,19 +248,57 @@ section h2 img {
   margin-left: 500px;
 } */
 
-/* Eto */
+.bathome-img {
+  margin-left: -15%;
+}
+
 .Multimédia1 {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-.bathome-img {
-  margin-left: -15%;
+.divEnfant {
+  display: flex;
+  align-items: center;
+  gap: 0; /* Pas d'espace entre l'image et le texte */
 }
-/* katreto */
+
+.arrow {
+  height: 50px;
+}
+
+.arrow {
+  height: 50px;
+}
+
+.batBegins {
+  text-align: justify;
+  line-height: 1;
+  padding: 10px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  border: solid 1px rgb(153, 138, 138);
+  border-radius: 0px 10px 10px 0px;
+  width: 400px;
+  height: 230px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to bottom right,
+    grey 2%,
+    rgb(55, 61, 70),
+    rgba(54, 103, 194, 0.2)
+  );
+}
+
+.Multimédia2 {
+  margin-top: 150px;
+  margin-bottom: 90px;
+  text-align: center;
+  /* width: 2000px;*/
+}
 
 .multim2 {
   display: flex;
@@ -267,17 +307,6 @@ section h2 img {
   /*justify-content: center;
   align-items: center;*/
   margin: 0 auto;
-}
-
-.arrow {
-  height: 50px;
-}
-
-.Multimédia2 {
-  margin-top: 150px;
-  margin-bottom: 90px;
-  text-align: center;
-  /* width: 2000px;*/
 }
 
 .contact {
@@ -357,12 +386,16 @@ section h2 img {
 }
 
 .boutons button {
+  appearance: none;
   padding: 10px 20px;
+  color: white;
+  background-color: inherit;
+  border-color: #19587d;
+  font-weight: 600;
 }
 
 .test {
   display: block;
-
   border-style: none;
   border-bottom-style: solid;
 }
@@ -376,13 +409,20 @@ section h2 img {
 
 input[type="submit"] {
   background: linear-gradient(to right, #eddebf66, #89000866);
-  margin-left: 40%;
+  /*margin-left: 40%;*/
   margin-top: 17px;
   padding: 15px 50px;
   color: white;
   font-family: "rajdhani";
+  letter-spacing: 0.8px;
   font-weight: bold;
   border-width: 0px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*CITATION*/
@@ -409,11 +449,11 @@ cite {
 }
 
 .citation img:first-of-type {
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .citation img:nth-of-type(2) {
-  margin-left: 65%;
+  margin-left: 75%;
 }
 
 .circle {
@@ -452,25 +492,26 @@ footer {
 }
 
 .wb {
-  display: inline-flex;
+  display: flex;
   font-size: 10px;
   margin-bottom: 15px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
-  gap: 12px;
+  align-items: center;
+  gap: 25px;
 }
 
 .Icones {
-  display: inline-flex;
+  display: flex;
   margin-top: 4%;
-  margin-left: 19%;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   gap: 25px;
   max-width: 25px;
 }
 
-a > img {
+/*a > img {
   height: 30px;
   width: 30px;
   margin-left: 5px;
-}
+}*/
