@@ -10,13 +10,14 @@
 html {
   margin: 0;
   padding: 0;
+  overflow-x: auto;
 }
 
 body {
   /* code napiko */
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   /* katreto */
 
   box-sizing: border-box;
@@ -53,6 +54,7 @@ main {
   position: relative;
   border-bottom: none;
   border-top: solid grey;
+  /*max-width: 100%;*/
 }
 
 header {
@@ -75,7 +77,6 @@ header {
 /* katreto */
 
 .logohome {
-  width: 5%;
   height: auto;
   margin-left: 6%;
 }
@@ -151,6 +152,7 @@ header span a {
 
 .principal {
   padding: 5%;
+  max-width: 100%;
 }
 
 .PrezBatman div {
@@ -160,21 +162,30 @@ header span a {
   margin-top: 15px;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.cinema {
+  max-width: 100%;
 }
 
 .robertP {
   width: 15vw;
   height: auto;
+  max-width: 100%;
 }
 
 .christianB {
   width: 15vw;
   height: auto;
+  max-width: 100%;
 }
 
 .benA {
   width: 15vw;
   height: auto;
+  max-width: 100%;
 }
 
 figcaption {
@@ -200,14 +211,14 @@ section h2 img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 } /* A voir pour que les images tiennent dans le contenu de la page principale*/
 
 /*ALLIES*/
 
 .Bathome12 img {
   position: absolute;
-  text-align: right;
-  right: -100px;
+  right: -105px;
 }
 
 .Allies {
@@ -221,6 +232,7 @@ section h2 img {
   justify-content: space-between;
   margin-top: 20px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 /*Justice League*/
@@ -249,7 +261,7 @@ section h2 img {
 } */
 
 .bathome-img {
-  margin-left: -15%;
+  margin-left: -13%;
 }
 
 .Multimédia1 {
@@ -264,6 +276,7 @@ section h2 img {
   display: flex;
   align-items: center;
   gap: 0; /* Pas d'espace entre l'image et le texte */
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -294,18 +307,21 @@ section h2 img {
 }
 
 .Multimédia2 {
-  margin-top: 150px;
+  /*margin-top: 150px;
   margin-bottom: 90px;
   text-align: center;
   /* width: 2000px;*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .multim2 {
-  display: flex;
-  width: 70%;
+  width: 95%;
   height: auto;
-  /*justify-content: center;
-  align-items: center;*/
   margin: 0 auto;
 }
 
@@ -329,18 +345,15 @@ section h2 img {
   width: 45%;
 }
 
-/*.email {
-  border-right: none;
-  border-left: none;
-  border-style: hidden;
-  border-image: none;
-  border: none;
+/*.formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  C'est ici que j'ai testé différents moyens pour enlever les bordures par défaut de la case mais en vain.
 */
-
-.Formulaire label {
-  color: #62676d;
+.formulaire label {
+  color: #9ca1a7;
+  font-weight: 400;
 }
 
 .email {
@@ -348,7 +361,7 @@ section h2 img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border-width: 0px;
-  border-bottom: solid grey;
+  border-bottom: 1px solid grey;
 } /*Les bordures sont toujours l
 à. A revoir*/
 
@@ -358,22 +371,21 @@ section h2 img {
   padding-top: 35px;
 }
 
-.FréqEnvoi {
-  display: block;
-  /*text-decoration: underline; DISO
-  text-decoration-style: solid;*/
-  border-bottom-style: solid;
+.fréqEnvoi {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid;
 }
 
 #fréquence {
-  /* margin-left: 20px;*/
-  /*padding: 0%;*/
   border-style: none; /*A revoir pour le style de la liste */
+  width: 20px;
 }
 
 .news {
   display: block;
-  border-bottom-style: solid;
+  border-bottom: 2px solid;
 }
 
 .boutons {
@@ -402,7 +414,7 @@ section h2 img {
 
 #commentaire {
   display: block;
-  border-bottom: solid grey;
+  border-bottom: 1px solid grey;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -501,15 +513,17 @@ footer {
   gap: 25px;
 }
 
-.Icones {
+.icones {
   display: flex;
   margin-top: 4%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 25px;
-  max-width: 25px;
+  gap: 0px;
 }
 
+.icones img {
+  transform: scale(0.65);
+}
 /*a > img {
   height: 30px;
   width: 30px;

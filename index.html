@@ -33,7 +33,7 @@
     <div class="home">
       <img
         class="logohome"
-        src="Assets/Logos/logohome.png" 
+        src="Assets/Logos/2logohome.png" 
         alt="Logo de Batman."
       /> 
       <!--  ou src="./Assets/Logos/logohome.png" pour dire qu'on commence à partir de la racine, là où se trouve le projet-->
@@ -104,7 +104,7 @@
 
       <h2>BATMAN AU CINÉMA</h2>
       
-       <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il
+       <p style="width: 65vw;">Le personnage de Batman est un super héros de l’univers de DC Comics. Il
         a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et
         apparaît pour la première fois dans le comic book Detective Comics en
         1939. Batman se différencie de Superman, alors héros majeur de DC, car
@@ -155,19 +155,27 @@
       
      </section>
  
-     <section class="Nemesis">
+     <section class="Nemesis">   
+      <div style="display: flex; justify-content: left; gap: 0px; align-items: baseline; ">
 
-        <h2>NEMESIS <img src="Assets/Illustrations/Bathome13.png"></h2>
+        <h2 style="margin-right: -48px;">NEMESIS</h2>
         <!--La taille de l'image à voir en CSS-->
-        <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+       
+
+        <img style="height:98px ;" src="Assets/Illustrations/5Bathome13.png">
+
+      </div>
+
+        <p style="width: 65vw;">Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
         </p>
-        <div>
+     
           <!--<ul class="Riddler">
             <li><img src="Assets/Illustrations/Bathome5.png" alt="The Riddler"></li>
             <li>The Riddler - Paul Dano (2022)</li>
         
         </ul>-->
 
+        <div>
         <figure>
           <img style="width: 15vw;" height="auto" src="Assets/Illustrations/Bathome5.png" alt="The Riddler">
           <figcaption>The Riddler- Paul Dano</figcaption>
@@ -204,7 +212,7 @@
 
      <section class="Allies">
         <h2>ALLIES</h2>
-        <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville de la criminalité qui y règne.
+        <p style="width: 65vw;">Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville de la criminalité qui y règne.
         </p>
 
           <div>
@@ -231,9 +239,11 @@
      <article class="JusticeLeague">
 
         <h2>JUSTICE LEAGUE</h2>
-        <p>Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou surnaturelles menacent son existence.
+        <p style="width: 65vw;">Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou surnaturelles menacent son existence.
         </p>
-        <p><img class="bathome-img" src="Assets/Illustrations/Bathome11.png" alt="Justice League"></p>
+
+
+        <img class="bathome-img" src="Assets/Illustrations/Bathome11.png" alt="Justice League">
 
      </article>
 
@@ -284,18 +294,16 @@
 
                <h2>ADRESSE EMAIL</h2>
                <label  for="email"></label> <br><input class="email" type="email" name="email" id="email" placeholder="Adresse email" >
-            <!--Peut-être enlever la bordure top de la case de l'adresse email en CSS. A voir.-->
 
             <h2>NEWSLETTER</h2>
 
             <p> 
              <label for="NewsLetterOk">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</label>   <input type="checkbox" name="NewsLetterOk" id="NewsLetterOk"></p>
 
-            <!--La forme du checkbox est peut-être à voir avec CSS-->
 
-            <label class="FréqEnvoi" for="FréqEnvoi">Choisissez la fréquence à laquelle vous souhaitez recevoir votre Newsletter</label>
+            <label class="fréqEnvoi" for="FréqEnvoi">Choisissez la fréquence à laquelle vous souhaitez recevoir votre Newsletter</label>
 
-           <select name="fréquence" id="fréquence"  >
+            <select name="fréquence" id="fréquence"  >
             <option value="journalière">Journalière</option>
             <option value="hebdomadaire">Hebdomadaire</option>
             <option value="Mensuelle">Mensuelle</option>
@@ -305,17 +313,18 @@
            </select>
 
            
-
-           <label class="news" for="news">Souhaitez vous recevoir des news</label><!--Peut-être mettre un border-bottom avec CSS-->
+           <p>
+            
+           <label class="news" for="news">Souhaitez vous recevoir des news</label>
            
            <span class="boutons">
 
            <button type="button" onclick="selectChoice('Des films')">Des films</button>
            <button type="button" onclick="selectChoice('Des comics')">Des comics</button>
            <button type="button" onclick="selectChoice('De tout')">De tout</button>
-       <!--Ajouter des paddings et marging aux boutons. Il manque aussi les codes javascript qui vont avec-->
 
             </span>
+          </p>
 
             <p>
                 <h2>MESSAGE</h2>
@@ -386,7 +395,7 @@
              <p style="display: inline-flex; justify-items:center;">Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p> 
             </div>
               
-              <div class="Icones">
+              <div class="icones">
                 
                 <a href="#"><img src="Assets/Logos/logo_sayna_white.png" alt="Sayna" ></a>
                 <a href="#"><img src="Assets/Logos/icon_x.png" alt="icon_x"></a>
