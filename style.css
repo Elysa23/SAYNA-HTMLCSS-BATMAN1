@@ -7,42 +7,32 @@
   background-attachment: scroll;
 }
   /* Ces propriétés si on mettait le background-image juste pour une section.*/
+
 html {
   margin: 0;
   padding: 0;
-  overflow-x: auto;
+  overflow-x: visible;
 }
 
 body {
   /* code napiko */
   display: flex;
   flex-direction: column;
-  /*overflow-x: hidden;*/
   /* katreto */
-
   box-sizing: border-box;
-
   color: white;
-
-  background-color: black;
-  background-image: url("Assets/Illustrations/Bathome1.png");
-  background-repeat: no-repeat;
-  /*background-position: inherit; /*semble n'avoir aucun effet sur le positionnement de l'image jusqu'ici*/
-  background-size: 100vw auto;
-  background-attachment: scroll;
-  background-origin: border-box;
-  background-clip: content-box;
-
-  /* shorthand property du background-color : 
-  background : color url repeat position*/
-
   text-align: justify;
   font-family: "Space Grotesk";
   font-size: 13px;
 
-  /*margin-left: 400px;
-  margin-right: 90px;*/
-  border: solid grey;
+  background-color: black;
+  background-image: url("Assets/Illustrations/Bathome1.png");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-attachment: scroll;
+  background-clip: border-box;
+
+  border: 1px solid rgbA(128, 128, 128, 0.3);
   border-top: none;
 
   margin-left: 5vw;
@@ -50,17 +40,20 @@ body {
 }
 
 main {
-  /*border: solid grey;*/
   position: relative;
   border-bottom: none;
-  border-top: solid grey;
-  /*max-width: 100%;*/
+  border-top: 3px solid rgbA(128, 128, 128, 0.3);
 }
 
+h2 {
+  font-family: "rajdhani";
+}
+
+/*ENTETE*/
+
 header {
-  display: inline-block;
-  border-top: none;
-  /*border-bottom: solid grey;*/
+  /*display: inline-block;
+  border-top: none;*/
   width: 100vw;
 }
 
@@ -81,44 +74,29 @@ header {
   margin-left: 6%;
 }
 
-h2 {
-  font-family: "rajdhani";
-}
+/*SECTION BRIEVE PRESENTATION DE BATMAN*/
 
-input[type="button"] {
-  /*font-family: "rajdhani";*/
-}
-
-.Batman p:first-of-type {
+.batman p:first-of-type {
   text-align: center;
   display: inline-block;
   width: 320px;
 }
 
-.Batman {
+.batman {
   margin-top: 160px;
   margin-bottom: 160px;
   text-align: center;
 }
 
-.LogosHaut {
+.logosHaut {
   position: absolute;
   right: -95px;
 }
 
-header span a {
-  color: azure;
-  text-align: right;
-  margin-left: 1200px;
-  font-size: larger;
-  font-family: "rajdhani";
-  font-size: 35px;
-  font-weight: bold;
-}
-.Batman nav li /*:first-child */ {
+.batman nav li {
   display: inline-block;
   border-style: hidden;
-  background-color: rgba(225, 225, 225, 0.3); /*A voir pour la couleur*/
+  background-color: rgba(225, 225, 225, 0.3);
   list-style-type: none;
   padding: 15px;
   padding-left: 40px;
@@ -128,24 +106,16 @@ header span a {
   letter-spacing: 1px;
 }
 
-.Batman li a {
+.batman li a {
   text-decoration: none;
   color: white;
 }
 
-.Batman nav li:nth-child(2) {
+.batman nav li:nth-child(2) {
   margin: 30px;
 }
 
-.Batman li {
-  list-style-type: none;
-}
-
-.Batman aside {
-  text-align: right;
-} /*Positionnement des icones sur la bordure à revoir*/
-
-.FlècheDown {
+.flècheDown {
   text-align: center;
   /* margin-top: 200px;*/
 }
@@ -155,7 +125,9 @@ header span a {
   max-width: 100%;
 }
 
-.PrezBatman div {
+/*1ère section, BATMAN AU CINEMA*/
+
+.prezBatman div {
   display: flex;
   text-align: center;
   box-sizing: border-box;
@@ -195,38 +167,26 @@ figcaption {
 
 /*2è section, NEMESIS*/
 
-section h2 img {
-  padding: 5px;
-  margin-left: 0px;
-  width: 10%;
-  /*Avoir pour le rapprochement de l'image et du NEMESIS*/
-}
-
-/*section h2 {
-  margin-right: 0%;
-  padding-right: 0px;
-}*/
-
-.Nemesis div {
+.nemesis div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-} /* A voir pour que les images tiennent dans le contenu de la page principale*/
+}
 
-/*ALLIES*/
+/*3è section, ALLIES*/
 
-.Bathome12 img {
+.bathome12 img {
   position: absolute;
   right: -105px;
 }
 
-.Allies {
+.allies {
   margin-top: 300px;
   margin-bottom: 80px;
 }
 
-.Allies div {
+.allies div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -237,34 +197,22 @@ section h2 img {
 
 /*Justice League*/
 
-.JusticeLeague img {
+.justiceLeague img {
   width: 100vw;
   margin-top: 80px;
 }
 
 /*MULTIMEDIA*/
 
-/*.Multimédia1 {
-  text-align: center;
-}*/
-
-/* .Multimédia1 img:first-of-type {
-  margin-right: 500px;
+.multimédia {
+  margin-top: 8%;
 }
-
-.Multimédia1 img:nth-last-of-type(2) {
-  margin-right: 500px;
-}
-
-.Multimédia1 img:nth-last-of-type(3) {
-  margin-left: 500px;
-} */
 
 .bathome-img {
   margin-left: -13%;
 }
 
-.Multimédia1 {
+.multimédia1 {
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -283,16 +231,10 @@ section h2 img {
   height: 50px;
 }
 
-.arrow {
-  height: 50px;
-}
-
 .batBegins {
   text-align: justify;
   line-height: 1;
   padding: 10px;
-  padding-right: 20px;
-  padding-bottom: 8px;
   border: solid 1px rgb(153, 138, 138);
   border-radius: 0px 10px 10px 0px;
   width: 400px;
@@ -306,17 +248,12 @@ section h2 img {
   );
 }
 
-.Multimédia2 {
-  /*margin-top: 150px;
-  margin-bottom: 90px;
-  text-align: center;
-  /* width: 2000px;*/
-
+.multimédia2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .multim2 {
@@ -325,32 +262,35 @@ section h2 img {
   margin: 0 auto;
 }
 
+/*4è section, CONTACT*/
+
 .contact {
   background: linear-gradient(to right, #4c4e42, #142936);
   border-top-style: inset;
   background-size: auto;
-  border-top-color: rgba(190, 185, 185, 2);
+  border-top-color: rgba(190, 185, 185, 0.3);
   border-top-width: 1.8px;
   border-bottom-style: inset;
-  border-bottom-color: rgba(190, 185, 185, 2);
+  border-bottom-color: rgba(190, 185, 185, 0.3);
   border-bottom-width: 1.8px;
 }
 
-.formulaire {
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 30%;
-  padding-left: 0px;
-  width: 45%;
+.h2 {
+  text-align: center;
+  margin-top: 5vh;
 }
 
-/*.formulaire {
+.formulaire {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+  margin-left: 30%;
+  width: 45%;
 }
-*/
+
 .formulaire label {
   color: #9ca1a7;
   font-weight: 400;
@@ -362,24 +302,16 @@ section h2 img {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0px;
   border-bottom: 1px solid grey;
-} /*Les bordures sont toujours l
-à. A revoir*/
-
-.h2 {
-  text-align: center;
-  /*margin-top: 40px;*/
-  padding-top: 35px;
 }
 
 .fréqEnvoi {
   display: inline-flex;
-  justify-content: space-between;
-  gap: 25px;
   border-bottom: 1px solid;
 }
 
 #fréquence {
-  border-style: none; /*A revoir pour le style de la liste */
+  /*encoreà revoir pour le style du bouton de la liste*/
+  border-style: none;
   width: 20px;
 }
 
@@ -391,7 +323,7 @@ section h2 img {
 .boutons {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  margin-top: 2vh;
   gap: 25px;
   padding: 10px 20px;
   justify-content: center;
@@ -406,29 +338,12 @@ section h2 img {
   font-weight: 600;
 }
 
-.test {
-  display: block;
-  border-style: none;
-  border-bottom-style: solid;
-}
-
 #commentaire {
   display: block;
-  border-bottom: 1px solid grey;
   width: 100%;
+  border-style: none;
+  border-bottom: 1px solid grey;
   background-color: rgba(0, 0, 0, 0);
-}
-
-input[type="submit"] {
-  background: linear-gradient(to right, #eddebf66, #89000866);
-  /*margin-left: 40%;*/
-  margin-top: 17px;
-  padding: 15px 50px;
-  color: white;
-  font-family: "rajdhani";
-  letter-spacing: 0.8px;
-  font-weight: bold;
-  border-width: 0px;
 }
 
 .submit {
@@ -437,16 +352,32 @@ input[type="submit"] {
   align-items: center;
 }
 
+input[type="submit"] {
+  background: linear-gradient(to right, #eddebf66, #89000866);
+  margin-top: 3vh;
+  padding: 15px 50px;
+  color: white;
+  font-family: "rajdhani";
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  border-width: 0px;
+}
+
 /*CITATION*/
 
 .citation {
-  /* margin-left: 40px;
-  margin-right: 40px;*/
-  margin-top: 150px;
+  margin-top: 15vh;
+}
+
+.citation img:first-of-type {
+  margin-left: 20%;
+}
+
+.citation img:nth-of-type(2) {
+  margin-left: 75%;
 }
 
 blockquote {
-  display: inline-block;
   font-weight: bold;
   width: 20%;
   margin-left: 40%;
@@ -460,23 +391,14 @@ cite {
   font-style: normal;
 }
 
-.citation img:first-of-type {
-  margin-left: 20%;
-}
-
-.citation img:nth-of-type(2) {
-  margin-left: 75%;
-}
-
 .circle {
   display: inline-block;
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  /*background-color: rgb(19, 104, 201);*/
   background: radial-gradient(
     circle 3px at center,
-    black 20%,
+    rgba(225, 225, 225, 0.1) 20%,
     rgb(19, 104, 201)
   );
 }
@@ -493,24 +415,19 @@ cite {
   margin-top: 0px;
 }
 
-.citation p:nth-of-type(3) {
-  margin-top: 0px;
-}
-
 /*FOOTER*/
 
 footer {
-  margin: 6% 28% 6% 37%;
+  margin: 6% 28% 6% 28%;
 }
 
 .wb {
   display: flex;
   font-size: 10px;
   margin-bottom: 15px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  gap: 25px;
 }
 
 .icones {
@@ -524,8 +441,3 @@ footer {
 .icones img {
   transform: scale(0.65);
 }
-/*a > img {
-  height: 30px;
-  width: 30px;
-  margin-left: 5px;
-}*/
