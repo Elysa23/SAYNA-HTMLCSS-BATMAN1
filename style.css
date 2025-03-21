@@ -128,21 +128,39 @@ header {
 /*1ère section, BATMAN AU CINEMA*/
 
 .prezBatman div {
-  display: flex;
   text-align: center;
   box-sizing: border-box;
   margin-top: 15px;
   flex-direction: row;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   max-width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;*/
 }
 
 .cinema {
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(15vw, 1fr)
+  ); /*Pour que les colonnes soient dynamiques*/
+  gap: 60px;
+  max-width: 100%; /*Empêche les débordements*/
 }
 
-.robertP {
+.cinema figure img {
+  max-width: 100%; /*Pour que l'image s'adapte à la largeur de la colonne, donc pas de dépassement du conteneur*/
+  height: auto;
+}
+
+/*Test sur la disposition Grid au niveau des images . Il faudra réactiver les propriétés des images si KO*/
+
+figure:not(.logosHaut figure) {
+  margin: 0;
+  width: fit-content; /*Pour que figure s'adapte à son contenu et que les images s'alignent aux textes*/
+}
+
+/*Les codes en commentaires ci-après à voir si nécessaire en version mobile*/
+/*.robertP {
   width: 15vw;
   height: auto;
   max-width: 100%;
@@ -159,6 +177,7 @@ header {
   height: auto;
   max-width: 100%;
 }
+*/
 
 figcaption {
   display: block;
@@ -168,10 +187,15 @@ figcaption {
 /*2è section, NEMESIS*/
 
 .nemesis div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+  gap: 60px;
+  max-width: 100%;
+}
+
+.nemesis div figure img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*3è section, ALLIES*/
@@ -184,15 +208,24 @@ figcaption {
 .allies {
   margin-top: 300px;
   margin-bottom: 80px;
-}
+} /*Encore à revoir si possible de ne pas utiliser les margin mais remplacer par les MEP modernes*/
 
 .allies div {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;*/
   margin-top: 20px;
   text-align: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+  gap: 60px;
+  max-width: 100%;
+}
+
+.allies div figure img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Justice League*/
@@ -219,6 +252,8 @@ figcaption {
   justify-content: space-between;
   align-items: center;
 }
+
+/*Test multimédia1 avec GRID*/
 
 .divEnfant {
   display: flex;
