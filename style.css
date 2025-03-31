@@ -1,20 +1,16 @@
-/*.Bathome1 {
-  width: 100%;
-  background-image: url("Assets/Illustrations/Bathome1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
-}
-  /* Ces propriétés si on mettait le background-image juste pour une section.*/
+/* {
+  outline: 1px solid red; /* Voir les limites de chaque élément} */
 
-html {
+/*html {
   margin: 0;
   padding: 0;
-  overflow-x: visible;
-}
+  overflow-x: auto;
+}*/
 
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   /* code napiko */
   display: flex;
   flex-direction: column;
@@ -30,7 +26,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-attachment: scroll;
-  background-clip: border-box;
 
   border: 1px solid rgbA(128, 128, 128, 0.3);
   border-top: none;
@@ -52,8 +47,6 @@ h2 {
 /*ENTETE*/
 
 header {
-  /*display: inline-block;
-  border-top: none;*/
   width: 100vw;
 }
 
@@ -63,6 +56,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 60%;
   max-width: 80%;
   margin-bottom: 4%;
   margin-top: 2%;
@@ -79,7 +73,7 @@ header {
 .batman p:first-of-type {
   text-align: center;
   display: inline-block;
-  width: 320px;
+  width: 30%;
 }
 
 .batman {
@@ -116,25 +110,24 @@ header {
 }
 
 .flècheDown {
-  text-align: center;
-  /* margin-top: 200px;*/
+  display: flex;
+  justify-content: center;
 }
 
 .principal {
   padding: 5%;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 /*1ère section, BATMAN AU CINEMA*/
 
-.prezBatman div {
-  text-align: center;
-  box-sizing: border-box;
-  margin-top: 15px;
-  flex-direction: row;
-  /*justify-content: space-between;*/
-  max-width: 100%;
-  /* flex-wrap: wrap;*/
+.prezBatman {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .cinema {
@@ -145,14 +138,13 @@ header {
   ); /*Pour que les colonnes soient dynamiques*/
   gap: 60px;
   max-width: 100%; /*Empêche les débordements*/
+  margin-top: 30px;
 }
 
 .cinema figure img {
   max-width: 100%; /*Pour que l'image s'adapte à la largeur de la colonne, donc pas de dépassement du conteneur*/
   height: auto;
 }
-
-/*Test sur la disposition Grid au niveau des images . Il faudra réactiver les propriétés des images si KO*/
 
 figure:not(.logosHaut figure) {
   margin: 0;
@@ -186,6 +178,13 @@ figcaption {
 
 /*2è section, NEMESIS*/
 
+.nemesis {
+  /*margin-top: 45px;*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .nemesis div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
@@ -207,16 +206,15 @@ figcaption {
 
 .allies {
   margin-top: 300px;
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 } /*Encore à revoir si possible de ne pas utiliser les margin mais remplacer par les MEP modernes*/
 
 .allies div {
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-between;*/
   margin-top: 20px;
   text-align: center;
-  /*flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
   gap: 60px;
@@ -230,20 +228,29 @@ figcaption {
 
 /*Justice League*/
 
+.justiceLeague {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .justiceLeague img {
   width: 100vw;
-  margin-top: 80px;
 }
 
 /*MULTIMEDIA*/
 
 .multimédia {
-  margin-top: 8%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  box-sizing: border-box;
 }
 
-.bathome-img {
+/*.bathome-img {
   margin-left: -13%;
-}
+}*/ /*A check d'où ceci vient je ne retrouve pas la classe*/
 
 .multimédia1 {
   display: flex;
@@ -251,6 +258,8 @@ figcaption {
   gap: 50px;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /*Test multimédia1 avec GRID*/
@@ -260,6 +269,11 @@ figcaption {
   align-items: center;
   gap: 0; /* Pas d'espace entre l'image et le texte */
   flex-wrap: wrap;
+  max-width: 100%;
+
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%; KO */
 }
 
 .arrow {
@@ -273,7 +287,7 @@ figcaption {
   border: solid 1px rgb(153, 138, 138);
   border-radius: 0px 10px 10px 0px;
   width: 400px;
-  height: 230px;
+  height: auto;
   box-sizing: border-box;
   background: linear-gradient(
     to bottom right,
@@ -281,20 +295,18 @@ figcaption {
     rgb(55, 61, 70),
     rgba(54, 103, 194, 0.2)
   );
+  max-width: 100%;
 }
 
 .multimédia2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
 .multim2 {
   width: 95%;
-  height: auto;
-  margin: 0 auto;
 }
 
 /*4è section, CONTACT*/
@@ -308,6 +320,8 @@ figcaption {
   border-bottom-style: inset;
   border-bottom-color: rgba(190, 185, 185, 0.3);
   border-bottom-width: 1.8px;
+
+  padding-bottom: 5vh;
 }
 
 .h2 {
@@ -318,12 +332,9 @@ figcaption {
 .formulaire {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: left;
-  margin-top: 5vh;
-  margin-bottom: 4vh;
-  margin-left: 30%;
-  width: 45%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .formulaire label {
@@ -404,8 +415,11 @@ input[type="submit"] {
   margin-top: 15vh;
 }
 
+/*TEST sur flex pour le bloc citation*/
+
 .citation img:first-of-type {
   margin-left: 20%;
+  /*Tests flex*/
 }
 
 .citation img:nth-of-type(2) {
@@ -453,7 +467,10 @@ cite {
 /*FOOTER*/
 
 footer {
-  margin: 6% 28% 6% 28%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20vh;
 }
 
 .wb {
@@ -463,14 +480,18 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .icones {
   display: flex;
   margin-top: 4%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 0px;
+  gap: 10px;
+  margin: 0 auto;
 }
 
 .icones img {
